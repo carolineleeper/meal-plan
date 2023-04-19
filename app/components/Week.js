@@ -2,7 +2,7 @@ import Day from "./day";
 
 const Week = () => {
 	return (
-		<>
+		<div className="flex flex-col">
 			<Day />
 			<Day />
 			<Day />
@@ -10,7 +10,7 @@ const Week = () => {
 			<Day />
 			<Day />
 			<Day />
-		</>
+		</div>
 	);
 };
 
