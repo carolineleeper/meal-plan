@@ -1,13 +1,22 @@
+"use client";
+
 const Day = () => {
+	const shuffleRecipe = () => {
+		console.log("recipe shuffled");
+	};
+	const notCooking = () => {
+		console.log("not cooking");
+	};
+
 	return (
 		<>
 			<h2>Today</h2>
 			<h3>19/4/23</h3>
 			<p>Roast Chicken</p>
-			<button>Shuffle Recipe</button>
-			<button>Not cooking today</button>
+			<button onClick={shuffleRecipe}>Shuffle Recipe</button>
+			<button onClick={notCooking}>Not cooking today</button>
 			<input type="checkbox" id="shoppingList" name="shoppingList" value="onShoppingList" />
-			<label for="shoppingList">Add to shopping list</label>
+			<label htmlFor="shoppingList">Add to shopping list</label>
 		</>
 	);
 };
