@@ -1,10 +1,10 @@
 import FillRecipesButton from "./FillRecipesButton";
 import AddToShoppingListButton from "./AddToShoppingListButton";
 
-const ActionButtons = () => {
+const ActionButtons = ({ mealPlan, recipes }) => {
 	return (
 		<>
-			<FillRecipesButton />
+			<FillRecipesButton mealPlan={mealPlan} recipes={recipes} />
 			<AddToShoppingListButton />
 		</>
 	);
