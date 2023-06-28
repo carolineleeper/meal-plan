@@ -18,7 +18,7 @@ export default async function Home() {
 
 	const now = formatDate(date);
 
-	date.setDate(date.getDate() + 28);
+	date.setDate(date.getDate() + 14);
 
 	const later = formatDate(date);
 
@@ -63,10 +63,10 @@ export default async function Home() {
 	console.log(mealPlan);
 
 	return (
-		<>
+		<div>
 			<Header />
 			<ActionButtons mealPlan={mealPlan} recipes={recipes} />
 			<MealPlan mealPlan={mealPlan} recipes={recipes} />
-		</>
+		</div>
 	);
 }

@@ -51,8 +51,8 @@ const Day = ({ day, recipes }) => {
 			<button onClick={notCookingForDay} className="text-purple-600">
 				Not cooking today
 			</button>
-			<input type="checkbox" id="shoppingList" name="shoppingList" value="onShoppingList" />
-			<label htmlFor="shoppingList">Add to shop list</label>
+			<input type="checkbox" id={day.date} name="shoppingList" value="onShoppingList" />
+			<label htmlFor={day.date}>Add to shop list</label>
 		</>
 	);
 };
