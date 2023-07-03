@@ -28,7 +28,8 @@ export default async function Home() {
 		.gte("date", now)
 		.lt("date", later)
 		.order("date");
-	const { data: recipes } = await supabase.functions.invoke("get-all-recipes");
+	const { data: recipes } = await supabase.from("recipes").select("title, url");
+	// const { data: recipes } = await supabase.from("recipes").select(); /// gets all columns from recipes table
 
 	// create dates array
 	const getDatesBetween = (startDate, endDate) => {
@@ -59,8 +60,6 @@ export default async function Home() {
 			has_been_added_to_shopping_list: day?.has_been_added_to_shopping_list,
 		};
 	});
-
-	console.log(mealPlan);
 
 	return (
 		<div>
