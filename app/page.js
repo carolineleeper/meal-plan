@@ -28,7 +28,7 @@ export default async function Home() {
 		.gte("date", now)
 		.lt("date", later)
 		.order("date");
-	const { data: recipes } = await supabase.from("recipes").select("title, url");
+	const { data: recipes } = await supabase.from("recipes").select("id, title, url");
 	// const { data: recipes } = await supabase.from("recipes").select(); /// gets all columns from recipes table
 
 	// create dates array
