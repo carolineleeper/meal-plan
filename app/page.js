@@ -62,7 +62,7 @@ export default async function Home() {
 	});
 
 	return (
-		<div>
+		<div className="min-h-screen flex flex-col justify-between">
 			<Header />
 			<ActionButtons mealPlan={mealPlan} recipes={recipes} />
 			<MealPlan mealPlan={mealPlan} recipes={recipes} />

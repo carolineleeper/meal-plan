@@ -27,7 +27,11 @@ const FillRecipesButton = ({ mealPlan, recipes }) => {
 		router.refresh();
 	};
 
-	return <button onClick={shuffleAllRecipes}>Fill Recipes</button>;
+	return (
+		<button className="bg-ctd-blue text-white" onClick={shuffleAllRecipes}>
+			Fill Recipes
+		</button>
+	);
 };
 
 export default FillRecipesButton;
