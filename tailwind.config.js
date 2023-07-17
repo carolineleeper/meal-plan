@@ -6,12 +6,12 @@ module.exports = {
 		"./app/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
-		colors: {
-			"ctd-orange": "#D58E67",
-			"ctd-blue": "#90BDDD",
-			"ctd-green": "#9AE3DF",
-		},
 		extend: {
+			colors: {
+				"ctd-orange": "#D58E67",
+				"ctd-blue": "#90BDDD",
+				"ctd-green": "#9AE3DF",
+			},
 			gridTemplateRows: {
 				7: "repeat(7, minmax(0, 1fr))",
 			},
