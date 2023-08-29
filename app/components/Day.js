@@ -36,24 +36,28 @@ const Day = ({ day, recipes }) => {
 	// state 3: has a recipe - is in supabase
 
 	return (
-		<>
-			<h2>{day.date}</h2>
-			<p>
-				{!day.id
-					? "no recipe allocated"
-					: !day.recipe.recipe_id
-					? "not cooking today"
-					: day.recipe.title}
-			</p>
-			<button onClick={shuffleRecipeForDay} className="text-orange-600">
-				Shuffle Recipe
-			</button>
-			<button onClick={notCookingForDay} className="text-purple-600">
-				Not cooking today
-			</button>
-			<input type="checkbox" id={day.date} name="shoppingList" value="onShoppingList" />
-			<label htmlFor={day.date}>Add to shop list</label>
-		</>
+		<div className="flex flex-col p-2 mt-2 mx-2 border border-slate-200 shadow-md">
+			<div className="flex flex-row">
+				<h2 className="text-teal-500 font-bold p-1">{day.date}</h2>
+				<p className="text-slate-600 font-bold p-1">
+					{!day.id
+						? "no recipe allocated"
+						: !day.recipe.recipe_id
+						? "not cooking today"
+						: day.recipe.title}
+				</p>
+			</div>
+			<div>
+				<button onClick={shuffleRecipeForDay} className="text-orange-600">
+					Shuffle Recipe
+				</button>
+				<button onClick={notCookingForDay} className="text-purple-600">
+					Not cooking today
+				</button>
+				<input type="checkbox" id={day.date} name="shoppingList" value="onShoppingList" />
+				<label htmlFor={day.date}>Add to shop list</label>
+			</div>
+		</div>
 	);
 };
 

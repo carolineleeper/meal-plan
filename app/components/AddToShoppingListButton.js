@@ -5,7 +5,11 @@ const writeStuff = () => {
 };
 
 const AddToShoppingListButton = () => {
-	return <button onClick={writeStuff}>Generate shopping list</button>;
+	return (
+		<button className="bg-ctd-green text-white font-bold uppercase p-2" onClick={writeStuff}>
+			Generate shopping list
+		</button>
+	);
 };
 
 export default AddToShoppingListButton;

@@ -7,19 +7,15 @@ const MealPlan = ({ mealPlan, recipes }) => {
 	// const week4 = mealPlan.slice(21);
 
 	return (
-		<div className="grid grid-col-4 grid-flow-col gap-y-2 w-screen overflow-scroll snap-x">
-			<div className="w-screen snap-center">
+		<div className="flex-grow grid grid-col-2 grid-flow-col w-screen overflow-x-auto overflow-y-hidden snap-x">
+			<div className="grid grid-rows-7 w-screen snap-center">
 				{week1.map((day) => (
-					<div className="border border-cyan-800">
-						<Day day={day} recipes={recipes} />
-					</div>
+					<Day day={day} recipes={recipes} />
 				))}
 			</div>
-			<div className="w-screen snap-center">
+			<div className="grid grid-rows-7 w-screen snap-center">
 				{week2.map((day) => (
-					<div className="border border-cyan-800">
-						<Day day={day} recipes={recipes} />
-					</div>
+					<Day day={day} recipes={recipes} />
 				))}
 			</div>
 			{/* <div className="w-screen snap-center">

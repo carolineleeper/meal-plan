@@ -19,6 +19,9 @@ module.exports = {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
+			dropShadow: {
+				"ctd-shadow": "4px 4px 0px 0px rgba(0, 0, 0, 1)",
+			},
 		},
 	},
 	plugins: [],

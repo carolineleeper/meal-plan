@@ -28,7 +28,7 @@ const FillRecipesButton = ({ mealPlan, recipes }) => {
 	};
 
 	return (
-		<button className="bg-ctd-blue text-white p-2" onClick={shuffleAllRecipes}>
+		<button className="bg-ctd-blue text-white font-bold uppercase p-2" onClick={shuffleAllRecipes}>
 			Fill Recipes
 		</button>
 	);

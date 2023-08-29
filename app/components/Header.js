@@ -1,6 +1,6 @@
 const Header = () => {
 	return (
-		<div className="flex justify-center p-4">
+		<div className="flex flex-grow-0 justify-center p-4">
 			<svg viewBox="0 0 598 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g clipPath="url(#clip0_8_186)">
 					<g filter="url(#filter0_dd_8_186)">
